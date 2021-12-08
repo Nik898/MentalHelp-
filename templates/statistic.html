@@ -1,0 +1,89 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Analysis</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="{% static 'acmproject/js/jquery.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'acmproject/js/jquery.dropotron.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'acmproject/js/jquery.scrollgress.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'acmproject/js/jquery.scrolly.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'acmproject/js/jquery.slidertron.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'acmproject/js/skel.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'acmproject/js/skel-layers.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'acmproject/js/init.js' %}" type="text/javascript"></script>
+
+		<link rel="stylesheet" href="{% static 'acmproject/skel.css' %}" />
+		<link rel="stylesheet" href="{% static 'acmproject/style.css' %}" />
+		<link rel="stylesheet" href="{% static 'acmproject/style-xlarge.css' %}" />
+    <link rel="stylesheet" href="{% static 'acmproject/statistics.css' %}" />
+</head>
+<body>
+  <header id="header" class="alt skel-layers-fixed">
+    <nav id="nav">
+        <ul>
+            <li><span style="color: #494d53"><a href="{% url 'HomePage' %}">Home</a></span></li>
+						<li><span style="color: #494d53"><a href="{% url 'Frequency' %}">Analysis</a></span></li>
+						<li><span style="color: #000000; font-weight: bold"> <a href="{% url 'test_home' %}">Take the test</a></span></li>
+        </ul>
+    </nav>
+</header>
+<body>
+  <section id="main" class="wrapper style1">
+    <header class="major">
+        <h2>Analysis page</h2>
+        <p>In this Page we will analyse the responses received from the <a style="text-decoration: none;" href="https://forms.gle/A9Aso9R8vuKYTPhK8">Google Form</a></p>
+    </header>
+<div class="container">
+        <form method="post" action="add">
+
+          <p id="group">We categorized the results in five groups given below:</p>
+
+          <div class="graph img-1">  
+          <img class="graph1" src="{% static 'acmproject/images/graph1.png' %}" width="100" height="100" alt="graph1">  
+          <span id="text">
+            <a href="{% url "Visualization" %}">
+            <span class="link-spanner"></span>
+            <span class="links">Frequency</span>
+          </a> 
+          <br>
+          This section illustrates the age, gender and the occupation of people who filled the survey.</span>
+          </div>
+            <br>
+
+            <div class="graph img-1">  
+          <img class="graph1" src="{% static 'acmproject/images/graph2.png' %}" width="100" height="100" alt="graph1">  
+          <span id="text"><a href="{% url "wa" %}"><span class="link-spanner"></span><span class="links">Gender vs weight and appetite issues</span></a> <br>
+          This section represents change in Appetite and Weight of people based on gender.</span>
+          </div>
+            <br>
+
+            <div class="graph img-1">  
+          <img class="graph1" src="{% static 'acmproject/images/graph3.png' %}" width="100" height="100" alt="graph1">  
+          <span id="text"><a href="{% url "graphs3" %}"><span class="link-spanner"></span><span class="links">Gender Groups Suffering from mood swings and instability in life style due to stress</span></a><br>
+          This section displays the level of Irritation/Annoyance, the frequency of Emotional breakdowns, and the constancy of Feeling Blue and Unhappy based on gender.</span>
+          </div>
+            <br>
+
+            <div class="graph img-1">  
+          <img class="graph1" src="{% static 'acmproject/images/graph4.png' %}" width="100" height="100" alt="graph1">  
+          <span id="text"><a href="{% url "graphs4" %}"><span class="link-spanner"></span><span class="links">Age group of people finding it difficult focus on work and life during times of high stress</span></a><br>
+          This section demonstrates the Loss of Interest, trouble in Managing Time, Lack of Concentration, Uncertainty about Future and the level of Difficulty in making Important Decisions based on different age groups.</span>
+          </div>
+            <br>
+
+            <div class="graph img-1">  
+          <img class="graph1" src="{% static 'acmproject/images/graph5.png' %}" width="100" height="100" alt="graph1">  
+          <span id="text"><a href="{% url "graphs5" %}"><span class="link-spanner"></span><span class="links">Genders suffering from mental and physical stress</span></a><br>
+          This section exhibits Difficulty in Sleeping/Waking up, Feeling fatigued, Quality of sleep, Self-harming thoughts, Difficulty in maintaining relationships and Frequency of Self-care acts based on gender.</span>
+          </div>
+            
+        </form>
+</div>
+</section>
+</body>
+</html>

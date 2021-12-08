@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap');
+
+body {
+    background-color: rgb(235, 235, 235);
+    font-family: 'Lato',sans-serif;
+    width: 100%;
+}
+
+h2 {
+    font-size: 2.3rem;
+    text-align: center;
+    font-weight:700;
+    color: #494d53;
+    padding: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: #494d53;
+    margin: 10px;
+    font-size:1rem;
+}
+
+.nav {
+    float: right;
+    margin-top: -10px;
+}
+
+
+#header {
+    background-color: white;
+    padding: 30px;
+    border: 1px solid transparent;
+    margin-top: -12px;
+}
+
+.form-content {
+    margin: 10px;
+}
+
+.container {
+    position: relative;
+    left:23%;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius:10px;
+    width: 60%;
+}
+
+input[type="radio"] {
+    margin: 8px;
+    font-size: 1.2rem;
+}
+
+input[type="submit"] {
+    font-size:1rem;
+    border: 1px solid #494d53;
+    border-radius:8px;
+    background-color: white;
+    font-family: Lato;
+    padding: 7px;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: rgb(235, 235, 235);
+}
+
+a:hover {
+    color: #e0555a;
+}
+
+#note {
+    font-size: 1.2rem;
+}

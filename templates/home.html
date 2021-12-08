@@ -1,0 +1,254 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		
+    <link rel="stylesheet" href="{% static 'acmproject/test.css' %}" />
+</head>
+<body>
+  <header id="header" class="alt skel-layers-fixed">
+    <div class="nav">
+          <span style="color: #494d53"><a href="{% url 'HomePage' %}">Home</a></span></li>
+						<span style="color: #494d53"><a href="{% url 'Frequency' %}">Statistics</a></span></li>
+						<span style="color: #000000; font-weight: bold"> <a href="{% url 'test_home' %}">Take the test</a></span></li>
+        </ul>
+      </div>
+</header>
+  <section id="main" class="wrapper style1">
+        <div class="major">
+          <h2>Mental Health Test</h2>
+          <h2><span id="note">Please state your level of agreement for the following questions that have been observed in the last week.</span></h2>
+        </div>    
+<div class="container">
+<form action="{% url "test_result" %}" required>
+    {% csrf_token %}
+  <div class="form-content">  
+  <p>Q1.Have you been feeling irritated and annoyed recently:</p>
+  <input type="radio" id="o1" name="Q1" value="0">
+  <label for="o1">Never</label><br>
+  <input type="radio" id="o2" name="Q1" value="1">
+  <label for="o2">Rarely</label><br>
+    <input type="radio" id="o3" name="Q1" value="2">
+  <label for="o3">Sometimes</label><br>
+  <input type="radio" id="o4" name="Q1" value="3">
+  <label for="o4">Often</label><br>
+   <input type="radio" id="o5" name="Q1" value="4">
+  <label for="o5">Always</label><br>
+    <br>
+
+   <p>Q2.Are you losing interest in things that you once used to enjoy?:</p>
+  <input type="radio" id="o1" name="Q2" value="0">
+  <label for="o1">Never</label><br>
+  <input type="radio" id="o2" name="Q2" value="1">
+  <label for="o2">Rarely</label><br>
+    <input type="radio" id="o3" name="Q2" value="2">
+  <label for="o3">Sometimes</label><br>
+  <input type="radio" id="o4" name="Q2" value="3">
+  <label for="o4">Often</label><br>
+   <input type="radio" id="o5" name="Q2" value="4">
+  <label for="o5">Always</label><br>
+    <br>
+
+   <p>Q3.Is it taking more time than usual for you to complete a certain task?:</p>
+  <input type="radio" id="o1" name="Q3" value="0">
+  <label for="o1">Never</label><br>
+  <input type="radio" id="o2" name="Q3" value="1">
+  <label for="o2">Rarely</label><br>
+    <input type="radio" id="o3" name="Q3" value="2">
+  <label for="o3">Sometimes</label><br>
+  <input type="radio" id="o4" name="Q3" value="3">
+  <label for="o4">Often</label><br>
+   <input type="radio" id="o5" name="Q3" value="4">
+  <label for="o5">Always</label><br>
+    <br>
+
+   <p>Q4.Are you finding it difficult to concentrate?:</p>
+  <input type="radio" id="o1" name="Q4" value="0">
+  <label for="o1">Never</label><br>
+  <input type="radio" id="o2" name="Q4" value="1">
+  <label for="o2">Rarely</label><br>
+    <input type="radio" id="o3" name="Q4" value="2">
+  <label for="o3">Sometimes</label><br>
+  <input type="radio" id="o4" name="Q4" value="3">
+  <label for="o4">Often</label><br>
+   <input type="radio" id="o5" name="Q4" value="4">
+  <label for="o5">Always</label><br>
+    <br>
+
+   <p>Q5.Do you feel uncertain about your future?:</p>
+  <input type="radio" id="o1" name="Q5" value="0">
+  <label for="o1">Never</label><br>
+  <input type="radio" id="o2" name="Q5" value="1">
+  <label for="o2">Rarely</label><br>
+    <input type="radio" id="o3" name="Q5" value="2">
+  <label for="o3">Sometimes</label><br>
+  <input type="radio" id="o4" name="Q5" value="3">
+  <label for="o4">Often</label><br>
+   <input type="radio" id="o5" name="Q5" value="4">
+  <label for="o5">Always</label><br>
+    <br>
+
+ <p>Q6.Do you find it difficult to make important decisions?:</p>
+  <input type="radio" id="o1" name="Q6" value="0">
+  <label for="o1">Never</label><br>
+  <input type="radio" id="o2" name="Q6" value="1">
+  <label for="o2">Rarely</label><br>
+    <input type="radio" id="o3" name="Q6" value="2">
+  <label for="o3">Sometimes</label><br>
+  <input type="radio" id="o4" name="Q6" value="3">
+  <label for="o4">Often</label><br>
+   <input type="radio" id="o5" name="Q6" value="4">
+  <label for="o5">Always</label><br>
+    <br>
+
+ <p>Q7.How often do you have an emotional breakdown?:</p>
+  <input type="radio" id="o1" name="Q7" value="0">
+  <label for="o1">Never</label><br>
+  <input type="radio" id="o2" name="Q7" value="1">
+  <label for="o2">Rarely</label><br>
+    <input type="radio" id="o3" name="Q7" value="2">
+  <label for="o3">Sometimes</label><br>
+  <input type="radio" id="o4" name="Q7" value="3">
+  <label for="o4">Often</label><br>
+   <input type="radio" id="o5" name="Q7" value="4">
+  <label for="o5">Always</label><br>
+    <br>
+
+  <p>Q8.Do you find it difficult to go to bed/get out of bed lately?:</p>
+  <input type="radio" id="o1" name="Q8" value="0">
+  <label for="o1">Never</label><br>
+  <input type="radio" id="o2" name="Q8" value="1">
+  <label for="o2">Rarely</label><br>
+    <input type="radio" id="o3" name="Q8" value="2">
+  <label for="o3">Sometimes</label><br>
+  <input type="radio" id="o4" name="Q8" value="3">
+  <label for="o4">Often</label><br>
+   <input type="radio" id="o5" name="Q8" value="4">
+  <label for="o5">Always</label><br>
+    <br>
+
+   <p>Q9.How often have you been feeling fatigued lately?:</p>
+  <input type="radio" id="o1" name="Q9" value="0">
+  <label for="o1">Never</label><br>
+  <input type="radio" id="o2" name="Q9" value="1">
+  <label for="o2">Rarely</label><br>
+    <input type="radio" id="o3" name="Q9" value="2">
+  <label for="o3">Sometimes</label><br>
+  <input type="radio" id="o4" name="Q9" value="3">
+  <label for="o4">Often</label><br>
+   <input type="radio" id="o5" name="Q9" value="4">
+  <label for="o5">Always</label><br>
+    <br>
+
+   <p>Q10.How often do you feel that anything you do isn’t going according to your plan?:</p>
+  <input type="radio" id="o1" name="Q10" value="0">
+  <label for="o1">Never</label><br>
+  <input type="radio" id="o2" name="Q10" value="1">
+  <label for="o2">Rarely</label><br>
+    <input type="radio" id="o3" name="Q10" value="2">
+  <label for="o3">Sometimes</label><br>
+  <input type="radio" id="o4" name="Q10" value="3">
+  <label for="o4">Often</label><br>
+   <input type="radio" id="o5" name="Q10" value="4">
+  <label for="o5">Always</label><br>
+    <br>
+
+  <p>Q11.Are you having a good night's sleep lately?:</p>
+  <input type="radio" id="o1" name="Q11" value="4">
+  <label for="o1">Never</label><br>
+  <input type="radio" id="o2" name="Q11" value="3">
+  <label for="o2">Rarely</label><br>
+    <input type="radio" id="o3" name="Q11" value="2">
+  <label for="o3">Sometimes</label><br>
+  <input type="radio" id="o4" name="Q11" value="1">
+  <label for="o4">Often</label><br>
+   <input type="radio" id="o5" name="Q11" value="0">
+  <label for="o5">Always</label><br>
+    <br>
+
+    <p>Q12.Are you having thoughts about harming self/others?:</p>
+  <input type="radio" id="o1" name="Q12" value="0">
+  <label for="o1">Never</label><br>
+  <input type="radio" id="o2" name="Q12" value="1">
+  <label for="o2">Rarely</label><br>
+    <input type="radio" id="o3" name="Q12" value="2">
+  <label for="o3">Sometimes</label><br>
+  <input type="radio" id="o4" name="Q12" value="3">
+  <label for="o4">Often</label><br>
+   <input type="radio" id="o5" name="Q12" value="4">
+  <label for="o5">Always</label><br>
+    <br>
+
+  <p>Q13.Have you had a drastic change in your weight recently?</p>
+  <input type="radio" id="o1" name="Q13" value="0">
+  <label for="o1">No</label><br>
+  <input type="radio" id="o2" name="Q13" value="4">
+  <label for="o2">Yes</label><br>
+    <br>
+
+    <p>Q14.Have you had a change of appetite recently?</p>
+  <input type="radio" id="o1" name="Q14" value="0">
+  <label for="o1">No</label><br>
+  <input type="radio" id="o2" name="Q14" value="4">
+  <label for="o2">Yes</label><br>
+    <br>
+
+    <p>Q15.Are you having trouble maintaining your relationships (personal/professional)?</p>
+  <input type="radio" id="o1" name="Q15" value="0">
+  <label for="o1">Never</label><br>
+  <input type="radio" id="o2" name="Q15" value="1">
+  <label for="o2">Rarely</label><br>
+    <input type="radio" id="o3" name="Q15" value="2">
+  <label for="o3">Sometimes</label><br>
+  <input type="radio" id="o4" name="Q15" value="3">
+  <label for="o4">Often</label><br>
+   <input type="radio" id="o5" name="Q15" value="4">
+  <label for="o5">Always</label><br>
+    <br>
+
+    <p>Q16.Have you been feeling blue and unhappy?</p>
+  <input type="radio" id="o1" name="Q16" value="0">
+  <label for="o1">Never</label><br>
+  <input type="radio" id="o2" name="Q16" value="1">
+  <label for="o2">Rarely</label><br>
+    <input type="radio" id="o3" name="Q16" value="2">
+  <label for="o3">Sometimes</label><br>
+  <input type="radio" id="o4" name="Q16" value="3">
+  <label for="o4">Often</label><br>
+   <input type="radio" id="o5" name="Q16" value="4">
+  <label for="o5">Always</label><br>
+    <br>
+
+    <p>Q17.Have you recently faced any trauma?</p>
+  <input type="radio" id="o1" name="Q17" value="0">
+  <label for="o1">No</label><br>
+  <input type="radio" id="o2" name="Q17" value="4">
+  <label for="o2">Yes</label><br>
+    <br>
+
+  <p>Q18.How regularly do you practice self-care</p>
+  <input type="radio" id="o1" name="Q18" value="4">
+  <label for="o1">Never</label><br>
+  <input type="radio" id="o2" name="Q18" value="3">
+  <label for="o2">Rarely</label><br>
+    <input type="radio" id="o3" name="Q18" value="2">
+  <label for="o3">Sometimes</label><br>
+  <input type="radio" id="o4" name="Q18" value="1">
+  <label for="o4">Often</label><br>
+   <input type="radio" id="o5" name="Q18" value="0">
+  <label for="o5">Always</label><br>
+    <br>
+    <br>
+  <input type="submit" value="Submit Responses">
+  </div>
+</form>
+</section>
+</body>
+</html>
+

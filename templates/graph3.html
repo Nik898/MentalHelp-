@@ -1,0 +1,609 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="{% static 'acmproject/js/jquery.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'acmproject/js/jquery.dropotron.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'acmproject/js/jquery.scrollgress.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'acmproject/js/jquery.scrolly.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'acmproject/js/jquery.slidertron.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'acmproject/js/skel.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'acmproject/js/skel-layers.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'acmproject/js/init.js' %}" type="text/javascript"></script>
+
+		<link rel="stylesheet" href="{% static 'acmproject/skel.css' %}" />
+		<link rel="stylesheet" href="{% static 'acmproject/style.css' %}" />
+		<link rel="stylesheet" href="{% static 'acmproject/style-xlarge.css' %}" />
+</head>
+<body>
+  <header id="header" class="alt skel-layers-fixed">
+    <nav id="nav">
+        <ul>
+            <li><span style="color: #494d53"><a href="{% url 'HomePage' %}">Home</a></span></li>
+						<li><span style="color: #494d53"><a href="{% url 'Frequency' %}">Statistics</a></span></li>
+						<li><span style="color: #000000; font-weight: bold"> <a href="{% url 'test_home' %}">Take the test</a></span></li>
+        </ul>
+    </nav>
+</header>
+  <section id="main" class="wrapper style1">
+    <header class="major">
+        <h2>Gender Groups Suffering from mood swings and instability in life style due to stress</h2>
+    </header>
+    <div class="container">
+         <h4>Irritation/Annoyance</h4>
+    <table border="1" cellspacing="0" cellpadding="0" width="408">
+    <tbody>
+        <tr>
+            <td width="408" colspan="5" valign="top">
+                <p align="center">
+                    <strong>
+                        irritation/annoyance * gender Crosstabulation
+                    </strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="408" colspan="5" valign="bottom">
+                <p>
+                    Count
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="208" colspan="2" rowspan="2" valign="top">
+            </td>
+            <td width="133" colspan="2" valign="top">
+                <p align="center">
+                    gender
+                </p>
+            </td>
+            <td width="67" rowspan="2" valign="top">
+                <p align="center">
+                    Total
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="67" valign="top">
+                <p align="center">
+                    male
+                </p>
+            </td>
+            <td width="67" valign="top">
+                <p align="center">
+                    female
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="126" rowspan="5">
+                <p>
+                    irritation/annoyance
+                </p>
+            </td>
+            <td width="82">
+                <p>
+                    never
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    17
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    9
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    26
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="82">
+                <p>
+                    rarely
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    22
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    17
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    39
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="82">
+                <p>
+                    sometimes
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    88
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    74
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    162
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="82">
+                <p>
+                    often
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    42
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    58
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    100
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="82">
+                <p>
+                    always
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    11
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    17
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    28
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="208" colspan="2">
+                <p>
+                    Total
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    180
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    175
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    355
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<p>
+   {{ graph1|safe }}
+    {{ graph11|safe }}
+</p>
+<br>
+<br>
+<h4>Emotional Breakdown</h4>
+<table border="1" cellspacing="0" cellpadding="0" width="420">
+    <tbody>
+        <tr>
+            <td width="420" colspan="5" valign="top">
+                <p align="center">
+                    <strong>
+                        emotional breakdown * gender Cross tabulation
+                    </strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="420" colspan="5" valign="bottom">
+                <p>
+                    Count
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="220" colspan="2" rowspan="2" valign="top">
+            </td>
+            <td width="133" colspan="2" valign="top">
+                <p align="center">
+                    gender
+                </p>
+            </td>
+            <td width="67" rowspan="2" valign="top">
+                <p align="center">
+                    Total
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="67" valign="top">
+                <p align="center">
+                    male
+                </p>
+            </td>
+            <td width="67" valign="top">
+                <p align="center">
+                    female
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="138" rowspan="5">
+                <p>
+                    emotional breakdown
+                </p>
+            </td>
+            <td width="82">
+                <p>
+                    never
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    35
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    11
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    46
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="82">
+                <p>
+                    rarely
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    66
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    32
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    98
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="82">
+                <p>
+                    sometimes
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    44
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    61
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    105
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="82">
+                <p>
+                    often
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    26
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    52
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    78
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="82">
+                <p>
+                    always
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    9
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    19
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    28
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="220" colspan="2">
+                <p>
+                    Total
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    180
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    175
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    355
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<p>
+    {{ graph2|safe }}
+    {{ graph22|safe }}
+</p>
+<br>
+<br>
+<h4>Feeling Unhappy and Blue</h4>
+<table border="1" cellspacing="0" cellpadding="0" width="388">
+    <tbody>
+        <tr>
+            <td width="388" colspan="5" valign="top">
+                <p align="center">
+                    <strong>feeling unhappy * gender Crosstabulation</strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="388" colspan="5" valign="bottom">
+                <p>
+                    Count
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="188" colspan="2" rowspan="2" valign="top">
+            </td>
+            <td width="133" colspan="2" valign="top">
+                <p align="center">
+                    gender
+                </p>
+            </td>
+            <td width="67" rowspan="2" valign="top">
+                <p align="center">
+                    Total
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="67" valign="top">
+                <p align="center">
+                    male
+                </p>
+            </td>
+            <td width="67" valign="top">
+                <p align="center">
+                    female
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="106" rowspan="5">
+                <p>
+                    feeling unhappy
+                </p>
+            </td>
+            <td width="82">
+                <p>
+                    never
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    37
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    23
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    60
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="82">
+                <p>
+                    rarely
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    43
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    27
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    70
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="82">
+                <p>
+                    sometimes
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    69
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    86
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    155
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="82">
+                <p>
+                    often
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    20
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    23
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    43
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="82">
+                <p>
+                    always
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    11
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    16
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    27
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="188" colspan="2">
+                <p>
+                    Total
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    180
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    175
+                </p>
+            </td>
+            <td width="67">
+                <p align="right">
+                    355
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+   {{ graph3|safe }}
+    {{ graph33|safe }}
+</p>
+</div>
+</body>
+</html>
